@@ -5,15 +5,15 @@ import * as FPJS from '../src'
  * Build the minified script before running this test.
  */
 
-declare const FingerprintJS: typeof FPJS
+declare const soretoFP: typeof FPJS
 
 describe('Integration', () => {
   it('gets visitor id', async () => {
     // Uses the global FingerprintJS value left by the distributive script
-    expect(FingerprintJS).toBeInstanceOf(Object)
-    expect(typeof FingerprintJS.load).toBe('function')
+    expect(soretoFP).toBeInstanceOf(Object)
+    expect(typeof soretoFP.load).toBe('function')
 
-    const fp = await FingerprintJS.load()
+    const fp = await soretoFP.load()
     expect(typeof fp).toBe('object')
 
     const result = await fp.get()

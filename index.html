@@ -1,0 +1,24 @@
+<!-- This page for test -->
+<html>
+  <head> </head>
+  <body></body>
+  <script src="./dist/fp.min.js"></script>
+  <script>
+    const fpPromise = soretoFP.load()
+
+    fpPromise
+      .then((fp) => fp.get())
+      .then((result) => {
+        // This is the visitor identifier:
+        const visitorId = result.visitorId
+        console.log(visitorId)
+      })
+  </script>
+</html>
+<!-- This page for test -->
+<!-- 
+Steps:
+1. Execute yarn add @fingerprintjs/fingerprintjs
+2. yarn build --watch
+2. Go live
+3. Check page. -->
