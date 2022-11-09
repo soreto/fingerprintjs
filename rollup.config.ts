@@ -25,7 +25,7 @@ const commonInput = {
 }
 
 const commonOutput: OutputOptions = {
-  name: 'FingerprintJS',
+  name: 'soretoFP',
   exports: 'named',
 }
 
